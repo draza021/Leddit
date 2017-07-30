@@ -1,6 +1,7 @@
 package com.development.id.ns.leddit.features.news
 
-import com.development.id.ns.leddit.api.RestAPI
+import com.development.id.ns.leddit.api.NewsAPI
+import com.development.id.ns.leddit.api.NewsRestAPI
 import com.development.id.ns.leddit.commons.RedditNews
 import com.development.id.ns.leddit.commons.RedditNewsItem
 import rx.Observable
@@ -13,7 +14,7 @@ import rx.Observable
  * News Manager allows you to request news from Reddit API.
  *
  */
-class NewsManager(private val api: RestAPI = RestAPI()) {
+class NewsManager(private val api: NewsAPI = NewsRestAPI()) {
 
     /**
      *
